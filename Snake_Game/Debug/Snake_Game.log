@@ -1,0 +1,14 @@
+﻿  main.cpp
+  Juego.cpp
+D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Juego.cpp(121,14): warning C4309: 'inicializando': truncamiento de valor constante
+D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Juego.cpp(210,23): warning C4309: '=': truncamiento de valor constante
+D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Juego.cpp(217,27): warning C4309: '=': truncamiento de valor constante
+D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Juego.cpp(232,33): warning C4309: '=': truncamiento de valor constante
+D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Juego.cpp(291,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  Snake.h
+  Generando código...
+D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Juego.cpp(29): warning C4715: 'Juego::ReproducirMusica1': no todas las rutas de acceso de control devuelven un valor
+D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Juego.cpp(35): warning C4715: 'Juego::ReproducirMusica2': no todas las rutas de acceso de control devuelven un valor
+D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Juego.cpp(41): warning C4715: 'Juego::ReproducirMusica3': no todas las rutas de acceso de control devuelven un valor
+D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Juego.cpp(297): warning C4717: 'Juego::main': recursiva para todas las rutas de acceso de control; la función provocará el desbordamiento de la pila en tiempo de ejecución
+  Snake_Game.vcxproj -> D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Debug\Snake_Game.exe
