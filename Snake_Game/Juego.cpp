@@ -158,26 +158,32 @@ void Juego::puntos() {
 
 
 void Juego::genFruta() {
-
-    fruta.x = 3 + (rand() % 73);
-    fruta.y = 5 + (rand() % 19);
-    gotoxy(fruta.x, fruta.y);
-    cout << fruta.cuerpo;
+    if (score % 10 == 0) {
+        
+        fruta2.x = 3 + (rand() % 73);
+        fruta2.y = 5 + (rand() % 19);
+        gotoxy(fruta2.x, fruta2.y);
+        cout << fruta2.cuerpo;
+    }
+    else {
+        fruta.x = 3 + (rand() % 73);
+        fruta.y = 5 + (rand() % 19);
+        gotoxy(fruta.x, fruta.y);
+        cout << fruta.cuerpo;
+    }
 
 }
-void Juego::genFruta2() {
 
-    fruta2.x = 3 + (rand() % 73);
-    fruta2.y = 5 + (rand() % 19);
-    gotoxy(fruta2.x, fruta2.y);
-    cout << fruta2.cuerpo;
-
-}
 
 void Juego::muerte() {
     if (snake[0].x == 2 || snake[0].x == 77 || snake[0].y == 4 || snake[0].y == 25)
         gameover = true;
-
+    /*for (int i = 0; i < 10; i++)
+    {
+        if (snake[0].x == wall[i].x && snake[0].y == wall[i].y){
+            gameover = true;
+        }
+    }*/
     for (int i = 1; i < tam && gameover == false; i++) {
         if (snake[0].x == snake[i].x && snake[0].y == snake[i].y) {
             gameover = true;
@@ -231,6 +237,21 @@ void Juego::genSnake() {
         cout << snake[i].cuerpo;
     }
 }
+/*void Juego::genWall() {
+    wall[0].x = 3 + (rand() & 73);
+    wall[0].y = 5 + (rand() & 19);
+    wall[0].cuerpo = 205;
+
+    for (int i = 0; i < sizeof(wall) / sizeof(wall[0]); i++) {
+        wall[i].x = wall[i - 1].x - 1;
+        wall[i].y = wall[i - 1].y;
+        wall[i].cuerpo = 205;
+    }
+    for (int i = 0; i < sizeof(wall) / sizeof(wall[0]); i++) {
+        gotoxy(wall[i].x, wall[i].y);
+        cout << wall[i].cuerpo;
+    }
+}*/
 
 void Juego::cfruta() {
     if (snake[0].x == fruta.x && snake[0].y == fruta.y) {
@@ -240,13 +261,13 @@ void Juego::cfruta() {
         snake[tam - 1].cuerpo = 254; //aumenta el tamaño de la serpiente
         score += 1;
     }
-}
-void Juego::cfruta2() {
-    if (snake[0].x == fruta2.x && snake[0].y == fruta2.y) {
-        ReproducirMusica3();
+    else if(snake[0].x == fruta2.x && snake[0].y == fruta2.y) {
+        genFruta();
+        tam += 1;
+        snake[tam - 1].cuerpo = 254;
         score += 1;
+        ReproducirMusica3();
         velocidad -= 20;
-        genFruta2();
     }
 }
 
@@ -276,7 +297,6 @@ void Juego::loop() {
     while (!gameover) {
 
         cfruta();
-        cfruta2();
         puntos();
         actualizar();
         imprimir();
@@ -291,7 +311,7 @@ void Juego::loop() {
 
 void Juego::main() {
 
-    system("Title SNAKE GAME");
+    system("Title SNAKE GAME!!!");
     system("color 0b");
     gameover = false;
     portada();
@@ -302,7 +322,8 @@ void Juego::main() {
     tablero();
     srand(time(NULL));
     genSnake();
-    bool m = (score % 10 == 0) ? genFruta2 : genFruta;
+    genFruta();
+    //genWall();
     loop();
     muerte2();
     main();

@@ -27,15 +27,18 @@
     <ClInclude Include="Fruta2.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="Wall.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Archivos de codigo</Filter>
-    </ClCompile>
     <ClCompile Include="Snake.h">
       <Filter>Archivos de encabezado</Filter>
     </ClCompile>
     <ClCompile Include="Juego.cpp">
+      <Filter>Archivos de codigo</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
       <Filter>Archivos de codigo</Filter>
     </ClCompile>
   </ItemGroup>

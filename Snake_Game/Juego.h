@@ -2,6 +2,7 @@
 #include "Snake.h"
 #include "Fruta.h"
 #include "Fruta2.h"
+#include "Wall.h"
 
 class Juego {
 public:
@@ -11,21 +12,20 @@ private:
     Snake snake[100];
     Fruta fruta;
     Fruta2 fruta2;
+    Wall wall[10];
     int tam = 4;
     int c = 25, f = 77; //limites
     bool gameover = false;
     void tablero();
     void tablero2();
     void genFruta(); //generar fruta
-    void genFruta2(); //generar fruta 2
     void genSnake(); //generar snake
+    void genWall(); //generar pared
     void loop(); //while
     void tecla();
     void actualizar(); //borra la colita
     void imprimir();
     void cfruta(); //comer fruta
-    void cfruta2();
-    void comer();
     void muerte(); //muerte si pasa los limites o choca con su cuerpo
     void puntos(); //score
     void portada(); //dibujo de snake
