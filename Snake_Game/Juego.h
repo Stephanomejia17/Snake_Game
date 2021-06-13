@@ -2,6 +2,7 @@
 #include "Snake.h"
 #include "Fruta.h"
 #include "Fruta2.h"
+#include "Fruta3.h"
 #include "Wall.h"
 
 class Juego {
@@ -12,6 +13,7 @@ private:
     Snake snake[100];
     Fruta fruta;
     Fruta2 fruta2;
+    Fruta3 fruta3;
     Wall wall[10];
     int tam = 4;
     int c = 25, f = 77; //limites

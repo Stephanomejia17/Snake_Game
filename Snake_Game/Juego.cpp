@@ -60,6 +60,10 @@ void Juego::tablero2() {
 }
 void Juego::tablero() {
     gotoxy(30, 2); printf("Bienvenido a SNAKE");
+    gotoxy(94, 2); printf("Guia de Juego");
+    gotoxy(90, 4); printf("%c", 4); gotoxy(92, 4); printf("Te aumenta un punto");
+    gotoxy(90, 6); printf("%c", 3); gotoxy(92, 6); printf("Te hace mas veloz");
+    gotoxy(90, 8); printf("%c", 30); gotoxy(92, 8); printf("Te aumenta el tamanio");
     //lineas horizontales
     for (int i = 2; i < 78; i++) {
         gotoxy(i, 0); printf("%c", 205);
@@ -165,6 +169,12 @@ void Juego::genFruta() {
         gotoxy(fruta2.x, fruta2.y);
         cout << fruta2.cuerpo;
     }
+    else if (tam % 3 == 0) {
+        fruta3.x = 3 + (rand() % 73);
+        fruta3.y = 5 + (rand() % 19);
+        gotoxy(fruta3.x, fruta3.y);
+        cout << fruta3.cuerpo;
+    }
     else {
         fruta.x = 3 + (rand() % 73);
         fruta.y = 5 + (rand() % 19);
@@ -256,18 +266,27 @@ void Juego::genSnake() {
 void Juego::cfruta() {
     if (snake[0].x == fruta.x && snake[0].y == fruta.y) {
         ReproducirMusica1();
-        genFruta();
         tam += 1;
         snake[tam - 1].cuerpo = 254; //aumenta el tamaño de la serpiente
         score += 1;
+        genFruta();
     }
     else if(snake[0].x == fruta2.x && snake[0].y == fruta2.y) {
-        genFruta();
+        ReproducirMusica3();
         tam += 1;
         snake[tam - 1].cuerpo = 254;
         score += 1;
-        ReproducirMusica3();
         velocidad -= 20;
+        genFruta();
+    }
+    else if (snake[0].x == fruta3.x && snake[0].y == fruta3.y) {
+        ReproducirMusica1();
+        tam += 1;
+        snake[tam - 1].cuerpo = 254;
+        tam += 1;
+        snake[tam - 1].cuerpo = 254;
+        score += 1;
+        genFruta();
     }
 }
 
@@ -311,7 +330,7 @@ void Juego::loop() {
 
 void Juego::main() {
 
-    system("Title SNAKE GAME!!!");
+    system("Title SNAKE GAME!");
     system("color 0b");
     gameover = false;
     portada();
