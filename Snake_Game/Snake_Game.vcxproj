@@ -143,6 +143,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Fruta.h" />
+    <ClInclude Include="Fruta2.h" />
     <ClInclude Include="Juego.h" />
   </ItemGroup>
   <ItemGroup>
