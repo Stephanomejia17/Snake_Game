@@ -59,6 +59,7 @@ void Juego::tablero2() {
     gotoxy(77, 25); printf("%c", 188);
 }
 void Juego::tablero() {
+    //Info
     gotoxy(30, 2); printf("Bienvenido a SNAKE");
     gotoxy(94, 2); printf("Guia de Juego");
     gotoxy(90, 4); printf("%c", 4); gotoxy(92, 4); printf("Te aumenta un punto");
@@ -162,7 +163,7 @@ void Juego::puntos() {
 
 
 void Juego::genFruta() {
-    if (score % 10 == 0) {
+    if (score % 5 == 0) {
         
         fruta2.x = 3 + (rand() % 73);
         fruta2.y = 5 + (rand() % 19);
