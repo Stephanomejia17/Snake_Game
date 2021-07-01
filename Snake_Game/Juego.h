@@ -1,8 +1,6 @@
 #include <iostream>
 #include "Snake.h"
 #include "Fruta.h"
-#include "Fruta2.h"
-#include "Fruta3.h"
 #include "Wall.h"
 
 class Juego {
@@ -10,11 +8,12 @@ public:
     void main();
 private:
     int score, velocidad;
+    int nivel;
     Snake snake[100];
     Fruta fruta;
     Fruta2 fruta2;
     Fruta3 fruta3;
-    Wall wall[10];
+    Wall wall[100];
     int tam = 4;
     int c = 25, f = 77; //limites
     bool gameover = false;
