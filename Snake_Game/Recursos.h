@@ -2,6 +2,7 @@
 #define __RECURSOS_H__
 #include <windows.h>
 #include <conio.h>
+
 void gotoxy(int x, int y) {
     HANDLE hCon;
     hCon = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -11,5 +12,4 @@ void gotoxy(int x, int y) {
     dwPos.Y = y;
     SetConsoleCursorPosition(hCon, dwPos);
 }
-
 #endif

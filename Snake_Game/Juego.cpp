@@ -1,4 +1,5 @@
 #include "Juego.h"
+#include "Recursos.h"
 #include <iostream>
 #include <windows.h>
 #include <conio.h>
@@ -12,15 +13,6 @@ Music musica_fondo;
 Music coin;
 Music choque;
 
-void gotoxy(int x, int y) {
-    HANDLE hCon;
-    hCon = GetStdHandle(STD_OUTPUT_HANDLE);
-
-    COORD dwPos;
-    dwPos.X = x;
-    dwPos.Y = y;
-    SetConsoleCursorPosition(hCon, dwPos);
-}
 bool Juego::ReproducirMusica1() {
     while (!musica_fondo.openFromFile("mario-coin.wav")) {
         return false;
@@ -321,7 +313,7 @@ void Juego::loop() {
 
 void Juego::main() {
 
-    system("Title SNAKE GAME!!");
+    system("Title SNAKE GAME!!!!");
     system("color 0b");
     gameover = false;
     portada();
