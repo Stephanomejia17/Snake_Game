@@ -3,7 +3,7 @@
 #include <windows.h>
 #include <conio.h>
 
-void gotoxy(int x, int y) {
+inline void gotoxy(int x, int y) {
     HANDLE hCon;
     hCon = GetStdHandle(STD_OUTPUT_HANDLE);
 

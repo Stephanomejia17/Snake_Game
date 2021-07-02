@@ -24,10 +24,13 @@
     <ClInclude Include="Fruta.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Wall.h">
+    <ClInclude Include="Recursos.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Recursos.h">
+    <ClInclude Include="Sounds.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Tableros.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
