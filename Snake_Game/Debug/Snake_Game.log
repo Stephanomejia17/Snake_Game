@@ -1,21 +1,18 @@
-﻿  main.cpp
-D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Snake.h(20,27): warning C4309: '=': truncamiento de valor constante
-D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Snake.h(27,31): warning C4309: '=': truncamiento de valor constante
-  Juego.cpp
+﻿  Juego.cpp
 D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Snake.h(20,27): warning C4309: '=': truncamiento de valor constante
 D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Snake.h(27,31): warning C4309: '=': truncamiento de valor constante
 D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Tableros.h(88,14): warning C4309: 'inicializando': truncamiento de valor constante
-D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Juego.cpp(74,33): warning C4309: '=': truncamiento de valor constante
-D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Juego.cpp(81,33): warning C4309: '=': truncamiento de valor constante
-D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Juego.cpp(89,33): warning C4309: '=': truncamiento de valor constante
-D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Juego.cpp(91,33): warning C4309: '=': truncamiento de valor constante
-D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Juego.cpp(126,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-  Snake.h
+D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Juego.cpp(70,33): warning C4309: '=': truncamiento de valor constante
+D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Juego.cpp(77,33): warning C4309: '=': truncamiento de valor constante
+D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Juego.cpp(85,33): warning C4309: '=': truncamiento de valor constante
+D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Juego.cpp(87,33): warning C4309: '=': truncamiento de valor constante
+D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Juego.cpp(122,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  main.cpp
 D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Snake.h(20,27): warning C4309: '=': truncamiento de valor constante
 D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Snake.h(27,31): warning C4309: '=': truncamiento de valor constante
   Generando código...
-D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Sounds.h(26): warning C4715: 'ReproducirMusica3': no todas las rutas de acceso de control devuelven un valor
-D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Sounds.h(20): warning C4715: 'ReproducirMusica2': no todas las rutas de acceso de control devuelven un valor
 D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Sounds.h(14): warning C4715: 'ReproducirMusica1': no todas las rutas de acceso de control devuelven un valor
-D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Juego.cpp(132): warning C4717: 'Juego::main': recursiva para todas las rutas de acceso de control; la función provocará el desbordamiento de la pila en tiempo de ejecución
+D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Sounds.h(20): warning C4715: 'ReproducirMusica2': no todas las rutas de acceso de control devuelven un valor
+D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Sounds.h(26): warning C4715: 'ReproducirMusica3': no todas las rutas de acceso de control devuelven un valor
+D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Juego.cpp(128): warning C4717: 'Juego::main': recursiva para todas las rutas de acceso de control; la función provocará el desbordamiento de la pila en tiempo de ejecución
   Snake_Game.vcxproj -> D:\UCSP\Ciencias de la Computación I\Snake_Game_VS\Snake_Game\Debug\Snake_Game.exe
